@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Downloads\codesoft_task\booking.css">
+
+</head>
+
+<body>
+  
+
+        
+    
+    <div id="bg">
+        <div class="title-wrap">
+            <h2 class="lg-title">BOOK YOUR TRIP</h2>
+        </div>
+
+        <section class="booking">
+
+            <form action="book_form.php" method="POST" class="book-form">
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>Name :</span>
+                        <input type="text" placeholder="enter your name" name="name">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="text" placeholder="enter your email" name="email">
+                    </div>
+                    <div class="inputBox">
+                        <span>Phone :</span>
+                        <input type="number" placeholder="enter your number" name="phone">
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="enter your address" name="address">
+                    </div>
+                    <div class="inputBox">
+                        <span>Where to :</span>
+                        <input type="text" placeholder="place you want to visit" name="location">
+                    </div>
+                    <div class="inputBox">
+                        <span>Number of seats :</span>
+                        <input type="number" placeholder="number of guests" name="guests">
+                    </div>
+                    <div class="inputBox">
+                        <span>Arrival :</span>
+                        <input type="date" name="arrivals">
+                    </div>
+                    <div class="inputBox">
+                        <span>Leaving :</span>
+                        <input type="date" name="leaving">
+                    </div>
+
+                </div>
+                <br/>
+                <a href="payment.html" class="" data-nav-link>
+                    <button class="book-btn">Confirm</button>
+                </a>
+                
+
+            </form>
+
+
+            <section>
+    </div>
+    <div class="popup open-popup" id="popup">
+        <img src="images/tick.png"  alt="">
+        <h2>Thank You!</h2>
+        <p>Your booking is confirmed<br><br>
+            Have a safe journey!!
+        </p>
+        <button type="ok" onclick="closePopup()">OK</button>
+    </div>
+
+<script>
+    let popup = document.getElementById('popup');
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+
+
+
+</script>
+
+
+</body>
+
+</html>

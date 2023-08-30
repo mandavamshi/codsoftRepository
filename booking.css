@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Pacifico&family=Rancho&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&family=Lilita+One&family=Pacifico&family=Rancho&family=Roboto:ital@1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+
+}
+
+
+.title-wrap {
+    text-align: center;
+    padding: 5rem 0;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.lg-title {
+    font-size: 1.8rem;
+    color: #094b65;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+#header .logo {
+    color: #094b65;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094b65;
+    color: #fff;
+}
+
+.heading {
+    background-size: cover;
+    background-position: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading h1 {
+    font-family: 'Prata', serif;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: azure;
+    text-shadow: none;
+    letter-spacing: 1.5rem;
+}
+
+.booking {
+    padding: 50px 100px 100px 100px;
+}
+
+.booking .book-form {
+    padding: 2rem;
+    background: wheat;
+}
+
+.booking .book-form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.booking .book-form .flex .inputBox {
+    flex: 1 1 30rem;
+}
+
+.booking .book-form .flex .inputBox input {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.3rem;
+    color: black;
+    text-transform: none;
+    margin-top: 1.5rem;
+    border: var(--border);
+}
+
+.booking .book-form .flex .inputBox input:focus {
+    background: rgb(211, 211, 211);
+    color: white;
+}
+
+.booking .book-form .flex .inputBox input:focus::placeholder {
+    color: white;
+}
+
+span {
+    font-size: 25px;
+}
+
+.book-btn {
+    padding: 20px 20px;
+    font-weight: 200;
+
+}
+
+.book-btn .btn {
+    font-size: 50px;
+    padding: 10px 30px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: rgb(211, 211, 211);
+    border: none;
+}
+
+.popup {
+    width: 400px;
+    background: #beebf9;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popup img {
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 40px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+
+p {
+    font-size: 25px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #fc9f9f;
+    color: #333;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
